@@ -1,0 +1,114 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #fff;
+    border-bottom: 1px solid #ddd;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    align-items: center;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav .signup {
+    background-color: #000;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-left: 20px;
+}
+
+.intro {
+    text-align: left;
+    padding: 20px;
+}
+
+.intro h1 {
+    margin: 0;
+    font-size: 36px;
+}
+
+.intro p {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.shop-now {
+    background-color: #000;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-top: 20px;
+    display: block;
+}
+
+.image-section {
+    text-align: right;
+    padding: 20px;
+}
+
+.image-section img {
+    width: 50%;
+}
+
+footer {
+    background-color: yellow;
+    padding: 20px;
+}
+
+.carousel {
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+}
+
+.carousel-track {
+    display: flex;
+    animation: scroll 10s linear infinite;
+    gap: 10px;
+}
+
+.carousel-track img {
+    width: calc(100% / 6 - 10px);
+}
+.no-underline {
+    text-decoration: none;
+}
+
+@keyframes scroll {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(calc(-100% - 50px)); }
+}
